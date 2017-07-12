@@ -6,219 +6,157 @@ class Nav extends Component{
     render(){
 
         return(
-            <nav className="navbar navbar-default navbar-static-top" role="navigation" >
+
+            <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
                 <div className="navbar-header">
-                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                         <span className="sr-only">Toggle navigation</span>
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-                    <a className="navbar-brand" href="index.html">CashCall - Admin Page</a>
+                    <a className="navbar-brand" href="index.html">CashCall - Admin</a>
                 </div>
-
-                <ul className="nav navbar-top-links navbar-right">
+                <ul className="nav navbar-right top-nav">
                     <li className="dropdown">
-                        <a className="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i className="fa fa-envelope fa-fw"></i> <i className="fa fa-caret-down"></i>
-                        </a>
-                        <ul className="dropdown-menu dropdown-messages">
-                            <li>
+                        <a href="#" className="dropdown-toggle" data-toggle="dropdown"><i className="fa fa-envelope"></i> <b className="caret"></b></a>
+                        <ul className="dropdown-menu message-dropdown">
+                            <li className="message-preview">
                                 <a href="#">
-                                    <div>
-                                        <strong>John Smith</strong>
-                                        <span className="pull-right text-muted">
-                                            <em>Yesterday</em>
+                                    <div className="media">
+                                        <span className="pull-left">
+                                            <img className="media-object" src="http://placehold.it/50x50" alt="" />
                                         </span>
+                                        <div className="media-body">
+                                            <h5 className="media-heading"><strong>John Smith</strong>
+                                            </h5>
+                                            <p className="small text-muted"><i className="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        </div>
                                     </div>
-                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
                                 </a>
                             </li>
-                            <li className="divider"></li>
-                            <li>
+                            <li className="message-preview">
                                 <a href="#">
-                                    <div>
-                                        <strong>John Smith</strong>
-                                        <span className="pull-right text-muted">
-                                            <em>Yesterday</em>
+                                    <div className="media">
+                                        <span className="pull-left">
+                                            <img className="media-object" src="http://placehold.it/50x50" alt="" />
                                         </span>
+                                        <div className="media-body">
+                                            <h5 className="media-heading"><strong>John Smith</strong>
+                                            </h5>
+                                            <p className="small text-muted"><i className="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        </div>
                                     </div>
-                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
                                 </a>
                             </li>
-                            <li className="divider"></li>
-                            <li>
+                            <li className="message-preview">
                                 <a href="#">
-                                    <div>
-                                        <strong>John Smith</strong>
-                                        <span className="pull-right text-muted">
-                                            <em>Yesterday</em>
+                                    <div className="media">
+                                        <span className="pull-left">
+                                            <img className="media-object" src="http://placehold.it/50x50" alt="" />
                                         </span>
+                                        <div className="media-body">
+                                            <h5 className="media-heading"><strong>John Smith</strong>
+                                            </h5>
+                                            <p className="small text-muted"><i className="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        </div>
                                     </div>
-                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
                                 </a>
                             </li>
-                            <li className="divider"></li>
-                            <li>
-                                <a className="text-center" href="#">
-                                    <strong>Read All Messages</strong>
-                                    <i className="fa fa-angle-right"></i>
-                                </a>
+                            <li className="message-footer">
+                                <a href="#">Read All New Messages</a>
                             </li>
                         </ul>
                     </li>
                     <li className="dropdown">
-                        <a className="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i className="fa fa-tasks fa-fw"></i> <i className="fa fa-caret-down"></i>
-                        </a>
-                        <ul className="dropdown-menu dropdown-tasks">
+                        <a href="#" className="dropdown-toggle" data-toggle="dropdown"><i className="fa fa-bell"></i> <b className="caret"></b></a>
+                        <ul className="dropdown-menu alert-dropdown">
                             <li>
-                                <a href="#">
-                                    <div>
-                                        <p>
-                                            <strong>Task 1</strong>
-                                            <span className="pull-right text-muted">40% Complete</span>
-                                        </p>
-                                        <div className="progress progress-striped active">
-                                            <div className="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >
-                                                <span className="sr-only">40% Complete (success)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                                <a href="#">Alert Name <span className="label label-default">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span className="label label-primary">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span className="label label-success">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span className="label label-info">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span className="label label-warning">Alert Badge</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Alert Name <span className="label label-danger">Alert Badge</span></a>
                             </li>
                             <li className="divider"></li>
                             <li>
-                                <a href="#">
-                                    <div>
-                                        <p>
-                                            <strong>Task 2</strong>
-                                            <span className="pull-right text-muted">20% Complete</span>
-                                        </p>
-                                        <div className="progress progress-striped active">
-                                            <div className="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" >
-                                                <span className="sr-only">20% Complete</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li className="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <p>
-                                            <strong>Task 3</strong>
-                                            <span className="pull-right text-muted">60% Complete</span>
-                                        </p>
-                                        <div className="progress progress-striped active">
-                                            <div className="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                                <span className="sr-only">60% Complete (warning)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li className="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <p>
-                                            <strong>Task 4</strong>
-                                            <span className="pull-right text-muted">80% Complete</span>
-                                        </p>
-                                        <div className="progress progress-striped active">
-                                            <div className="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                                                <span className="sr-only">80% Complete (danger)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li className="divider"></li>
-                            <li>
-                                <a className="text-center" href="#">
-                                    <strong>See All Tasks</strong>
-                                    <i className="fa fa-angle-right"></i>
-                                </a>
+                                <a href="#">View All</a>
                             </li>
                         </ul>
                     </li>
                     <li className="dropdown">
-                        <a className="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i className="fa fa-bell fa-fw"></i> <i className="fa fa-caret-down"></i>
-                        </a>
-                        <ul className="dropdown-menu dropdown-alerts">
+                        <a href="#" className="dropdown-toggle" data-toggle="dropdown"><i className="fa fa-user"></i> John Smith <b className="caret"></b></a>
+                        <ul className="dropdown-menu">
                             <li>
-                                <a href="#">
-                                    <div>
-                                        <i className="fa fa-comment fa-fw"></i> New Comment
-                                        <span className="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
+                                <a href="#"><i className="fa fa-fw fa-user"></i> Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i className="fa fa-fw fa-envelope"></i> Inbox</a>
+                            </li>
+                            <li>
+                                <a href="#"><i className="fa fa-fw fa-gear"></i> Settings</a>
                             </li>
                             <li className="divider"></li>
                             <li>
-                                <a href="#">
-                                    <div>
-                                        <i className="fa fa-twitter fa-fw"></i> 3 New Followers
-                                        <span className="pull-right text-muted small">12 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li className="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i className="fa fa-envelope fa-fw"></i> Message Sent
-                                        <span className="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li className="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i className="fa fa-tasks fa-fw"></i> New Task
-                                        <span className="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li className="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i className="fa fa-upload fa-fw"></i> Server Rebooted
-                                        <span className="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li className="divider"></li>
-                            <li>
-                                <a className="text-center" href="#">
-                                    <strong>See All Alerts</strong>
-                                    <i className="fa fa-angle-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li className="dropdown">
-                        <a className="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i className="fa fa-user fa-fw"></i> <i className="fa fa-caret-down"></i>
-                        </a>
-                        <ul className="dropdown-menu dropdown-user">
-                            <li><a href="#"><i className="fa fa-user fa-fw"></i> User Profile</a>
-                            </li>
-                            <li><a href="#"><i className="fa fa-gear fa-fw"></i> Settings</a>
-                            </li>
-                            <li className="divider"></li>
-                            <li><a href="login.html"><i className="fa fa-sign-out fa-fw"></i> Logout</a>
+                                <a href="#"><i className="fa fa-fw fa-power-off"></i> Log Out</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
-
-                <Sidebar />
+                <div className="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul className="nav navbar-nav side-nav">
+                        <li className="active">
+                            <a href="index.html"><i className="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="charts.html"><i className="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                        </li>
+                        <li>
+                            <a href="tables.html"><i className="fa fa-fw fa-table"></i> Tables</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i className="fa fa-fw fa-edit"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a href="bootstrap-elements.html"><i className="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                        </li>
+                        <li>
+                            <a href="bootstrap-grid.html"><i className="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i className="fa fa-fw fa-arrows-v"></i> Dropdown <i className="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="demo" className="collapse">
+                                <li>
+                                    <a href="#">Dropdown Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dropdown Item</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blank-page.html"><i className="fa fa-fw fa-file"></i> Blank Page</a>
+                        </li>
+                        <li>
+                            <a href="index-rtl.html"><i className="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
 
         );
