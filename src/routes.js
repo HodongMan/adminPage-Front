@@ -11,6 +11,7 @@ class routes extends PureComponent{
                 <Route path='/' component={Nav}>
                     <IndexRoute component={Main} />
                     <Route path='form' component={Form} />
+                    <Route path='list' component={List} />
                     <Route path='about' component={Form} />
                 </Route>
             </Router>
